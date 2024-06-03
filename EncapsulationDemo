@@ -1,0 +1,45 @@
+package TNS_DAY3;
+
+public class Encapsulation {
+	private int serialNum;
+	private String name;
+	private int age;
+	//getter and setter method 
+	public int getSerialNum() {
+		return serialNum;
+	}
+	public void setSerialNum(int serialNum) {
+		this.serialNum = serialNum;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+}
+new file 
+
+package TNS_DAY3;
+
+public class EncapsulationDemo {
+
+	public static void main(String[] args) {
+		Encapsulation obj=new Encapsulation();
+		obj.setAge(18);
+		obj.setName("sandeep");
+		obj.setSerialNum(101);
+		
+		System.out.println(obj.getAge());
+		System.out.println(obj.getName());
+		System.out.println(obj.getSerialNum());
+
+	}
+
+}
