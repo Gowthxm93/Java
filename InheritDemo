@@ -1,0 +1,32 @@
+public class InheritDemo {
+	public class ParentOne{
+		void disp() {
+			System.out.println("HI");
+			
+		}
+	}
+	public class ChildOne extends ParentOne {
+		void split() {
+			System.out.println("Hello");
+			
+		}
+	}
+	public class ChildTwo extends ParentOne {
+		void disp() {
+			System.out.println("Hello");
+		}
+	
+
+	public static void main(String[] args) {
+		InheritDemo inheritance=new InheritDemo();
+		ParentOne obj1=inheritance.new ParentOne();
+		ChildOne obj2=inheritance.new ChildOne();
+		ChildTwo obj3=inheritance.new ChildTwo();
+		obj1.disp();
+		obj2.disp();
+		obj3.disp();
+		
+
+	}
+
+}
